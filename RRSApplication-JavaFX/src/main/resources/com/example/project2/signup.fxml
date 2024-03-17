@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox alignment="TOP_CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.project2.signupController" prefWidth="360" prefHeight="580">
+    <Label text="Recipe Recommendor" style="-fx-font-size: 25;" VBox.vgrow="NEVER" fx:id="welcomeText">
+        <padding>
+            <Insets top="20" right="0" bottom="0" left="0"/>
+        </padding>
+    </Label>
+    <Label text="Sign Up" style="-fx-font-size: 24;" alignment="CENTER">
+        <padding>
+            <Insets top="15" right="20" bottom="20" left="20"/>
+        </padding>
+    </Label>
+    <VBox spacing="5" alignment="CENTER_LEFT">
+        <VBox.margin>
+            <Insets left="30"/>
+        </VBox.margin>
+        <Label text="Username:" style="-fx-font-size:16;" />
+        <TextField fx:id="usernameTextField" maxWidth="200"/>
+    </VBox>
+    <VBox spacing="5" alignment="CENTER_LEFT">
+        <VBox.margin>
+            <Insets left="30"/>
+        </VBox.margin>
+        <Label text="Usermail:" style="-fx-font-size:16;" />
+        <TextField fx:id="usermailTextField" maxWidth="200"/>
+    </VBox>
+    <VBox spacing="5" alignment="CENTER_LEFT">
+        <VBox.margin>
+            <Insets left="30"/>
+        </VBox.margin>
+        <Label text="Password:" style="-fx-font-size:16;" />
+        <TextField fx:id="passwordTextField" maxWidth="200">
+            <padding>
+                <Insets top="0" right="0" bottom="10" left="0"/>
+            </padding> </TextField>
+    </VBox>
+    <Button text="Signup" onAction="#onsignupButtonClick" fx:id="signupButton" style="-fx-font-size: 16;" maxWidth="200" maxHeight="40" />
+    <HBox xmlns:fx="http://javafx.com/fxml" spacing="5" alignment="CENTER_LEFT">
+        <Label text="Already having an account?" style="-fx-font-size:16;">
+            <padding>
+                <Insets left="30"/>
+            </padding> </Label>
+        <Button text="Login" onAction="#onloginButtonClick" fx:id="loginButton" style="-fx-font-size: 12;" maxWidth="50" maxHeight="20" />
+    </HBox>
+</VBox>

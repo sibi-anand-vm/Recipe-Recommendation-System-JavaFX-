@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.project2.menuController"
+      prefHeight="580.0" prefWidth="360.0">
+
+
+    <Label text="Recipe Recommendor" style="-fx-font-size: 25;" VBox.vgrow="NEVER" fx:id="welcomeText">
+        <padding>
+            <Insets top="20" right="0" bottom="0" left="20"/>
+        </padding>
+    </Label>
+    <Label text="Choose Your Option" style="-fx-font-size:28;">
+        <padding>
+            <Insets top="30" right="0" bottom="20" left="30"/>
+        </padding>
+    </Label>
+    <VBox>
+        <VBox.margin>
+            <Insets bottom="25" left="55"/>
+        </VBox.margin>
+        <Button text="Add Recipe" onAction="#onregController" fx:id="regButton" style="-fx-font-size: 16;" maxWidth="200" maxHeight="40">
+        </Button> </VBox>
+    <VBox>
+        <VBox.margin>
+            <Insets bottom="25" left="55"/>
+        </VBox.margin>
+        <Button text="Delete Recipe" onAction="#ondelButtonClick"  fx:id="alterButton" style="-fx-font-size: 16;" maxWidth="200" maxHeight="40" >
+        </Button> </VBox>
+    <VBox>
+        <VBox.margin>
+            <Insets bottom="25" left="55"/>
+        </VBox.margin>
+        <Button text="My Recipes" onAction="#onmyrecipesController" fx:id="myeventButton" style="-fx-font-size: 16;" maxWidth="200" maxHeight="40" >
+        </Button>
+    </VBox>
+
+</VBox>

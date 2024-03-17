@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.project2.regController"
+      prefHeight="580.0" prefWidth="360.0">
+    <VBox>
+        <VBox.margin>
+            <Insets left="30" />
+        </VBox.margin>
+        <Label text="Recipe Recommendor" style="-fx-font-size: 30;" VBox.vgrow="NEVER" fx:id="welcomeText">
+        </Label> </VBox>
+    <Label text="Add Recipe" style="-fx-font-size: 24;" alignment="CENTER">
+        <padding>
+            <Insets top="15" right="20" bottom="20" left="20"/>
+        </padding>
+    </Label>
+    <VBox spacing="5" alignment="CENTER_LEFT">
+        <VBox.margin>
+            <Insets left="30"/>
+        </VBox.margin>
+        <Label text="Recipe Name:" style="-fx-font-size:16;" />
+        <TextField fx:id="recipenameTextField" maxWidth="200"/>
+    </VBox>
+    <VBox spacing="5" alignment="CENTER_LEFT">
+        <VBox.margin>
+            <Insets left="30"/>
+        </VBox.margin>
+        <Label text="Recipe Type:" style="-fx-font-size:16;" />
+        <TextField fx:id="recipetypeTextField" maxWidth="200"/>
+    </VBox>
+    <VBox spacing="5" alignment="CENTER_LEFT">
+        <VBox.margin>
+            <Insets left="30"/>
+        </VBox.margin>
+        <Label text="Recipe Region:" style="-fx-font-size:16;" />
+        <TextField fx:id="reciperegionTextField" maxWidth="200">
+            <padding>
+                <Insets top="0" right="0" bottom="10" left="0"/>
+            </padding> </TextField>
+    </VBox>
+    <VBox spacing="5" alignment="CENTER_LEFT">
+        <VBox.margin>
+            <Insets left="30"/>
+        </VBox.margin>
+        <Label text="Recipe Taste:" style="-fx-font-size:16;" />
+        <TextField fx:id="recipetasteTextField" maxWidth="200">
+            <padding>
+                <Insets top="0" right="0" bottom="10" left="0"/>
+            </padding> </TextField>
+    </VBox>
+    <VBox alignment="CENTER">
+        <VBox.margin>
+            <Insets top="30"/>
+        </VBox.margin>
+        <Button text="Confirm" onAction="#onconfirmButtonclick" fx:id="confirmButton" style="-fx-font-size: 16;" maxWidth="200" maxHeight="40" >
+        </Button>
+    </VBox>
+
+    <HBox xmlns:fx="http://javafx.com/fxml" spacing="5" alignment="CENTER_LEFT">
+        <Label text="Click Here To Menu" style="-fx-font-size:16;">
+            <padding>
+                <Insets left="30" top="20"/>
+            </padding> </Label>
+        <Button text="Menu" onAction="#onmenuButtonClick" fx:id="loginButton" style="-fx-font-size: 12;" maxWidth="60" maxHeight="20" >
+            <HBox.margin>
+                <Insets top="20" />
+            </HBox.margin>
+        </Button>
+    </HBox>
+</VBox>
